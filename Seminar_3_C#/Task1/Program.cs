@@ -4,7 +4,7 @@ bool Palyndrome(int number)
 {
     int changing = number;
     int secondNumber = 0;
-    while (changing>0)
+    while (changing > 0)
     {
         secondNumber = secondNumber * 10 + changing % 10;
         changing = changing / 10;
