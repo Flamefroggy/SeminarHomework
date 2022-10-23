@@ -7,12 +7,12 @@ void Coub(int number)
     {
         if (count == number) 
         {   
-            Console.Write($"{count*count*count}.");
+            Console.Write($"{Math.Pow(count, 3)}.");
             break;
         }
         else
         {
-            Console.Write($"{count*count*count}, ");
+            Console.Write($"{Math.Pow(count, 3)}, ");
             count++;
         }
     }
