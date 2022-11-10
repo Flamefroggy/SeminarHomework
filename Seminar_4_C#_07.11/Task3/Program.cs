@@ -1,5 +1,5 @@
 ﻿// Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
-int[] GenerateArray(int size)
+int[] CreateArray(int size)
 {
     int[] array = new int [size];
     for (int i = 0; i < size; i++)
@@ -19,7 +19,7 @@ int[] GenerateArray(int size)
 
 void ShowArray(int[] array)
 {
-    Console.Write("А вот и массив: ");
+    Console.Write("Ваш массив: ");
 
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + " ");
@@ -27,5 +27,5 @@ void ShowArray(int[] array)
 
 Console.Write("Введите число элементов: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int [] array = GenerateArray(n);
+int [] array = CreateArray(n);
 ShowArray(array);
