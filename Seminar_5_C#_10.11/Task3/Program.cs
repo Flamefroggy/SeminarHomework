@@ -7,8 +7,8 @@ double[] CreateRandomArray(int size, int minValue, int maxValue)
     for (int i=0; i < size; i++)
     {   
         int a = new Random().Next(minValue, maxValue);
-        double b = Math.Round(new Random().NextDouble(), 3);
-        array[i] = a + b;
+        double b = new Random().NextDouble();
+        array[i] = Math.Round(a+b, 3);
     }
     return array;
 }
