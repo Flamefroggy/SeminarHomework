@@ -21,9 +21,8 @@ void ShowArray(int[] array)
 int Sum(int[] array)
 {
     int sum = 0;
-    for (int i = 1; i < array.Length; i++)
-        if (i%2==1)
-            sum += array[i];
+    for (int i = 1; i < array.Length; i+=2)
+       sum += array[i];
     return sum;
 }
 
