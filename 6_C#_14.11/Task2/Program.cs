@@ -15,7 +15,7 @@ void LinFunc(double a, double b, double c, double d)
         double x = (d-b)/(a-c);
         double y = a*x+b;
         // if (a*x+b != c*x+d) Console.WriteLine("Что-то не так, перепроверь..."); не всегда работает
-        // так как для иррациональных проверок даже double не подойдёт. Пусть хоть примерное показывает...
+        // Уже узнал, почему, хехе
         Console.WriteLine($"Точки пересечения заданных прямых: x = {x}, а y = {y}.");
     }
 }
